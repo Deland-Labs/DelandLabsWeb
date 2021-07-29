@@ -744,6 +744,7 @@ textarea.form-control {
 #features .row .col-sm-6:nth-last-child(-n+2) .features-item {
     margin-bottom: 0;
 }
+
 }
 
 @media (max-width: 767.98px) {
@@ -757,6 +758,12 @@ body{
 }
 .navbar{
 	padding:15px 0;
+}
+#about-us .container:first-child h2{
+	text-align: left;
+}
+#about-us .container:first-child p{
+	text-align: left;
 }
 a + a {
     margin-left: 15px;

@@ -50,11 +50,10 @@
 	var animation = bodymovin.loadAnimation({
 		container: document.getElementById('lottie1'),
 		renderer: 'svg',
-		loop: true,
+		loop: false,
 		autoplay: true,
 		path: './skin/lottie/lottie1/data.json'
 	  })
-	
 
 	var lottie2 = bodymovin.loadAnimation(
 		{
@@ -62,8 +61,7 @@
 		  path: './skin/lottie/lottie2/data.json', // Required
 		  renderer: 'svg', // Required
 		  loop: true, // Optional
-		  autoplay: false, // Optional
-		  name: "lottie2", // Name for future reference. Optional.
+		  autoplay: false, // Optiona
 		}	
 	)
 
