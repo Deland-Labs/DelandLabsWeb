@@ -527,8 +527,71 @@ a + a{
 
 /*======================================== Road Map =============================*/
 #roadmap{
-	padding-bottom:50px;
 	background: linear-gradient(180deg, #101829 0%, #22365F 100%);
+	overflow-x: hidden;
+}
+.timeline{
+
+	position: relative;
+	height: 310px;
+	width: 90%;
+	border:1px dotted #0099E6;
+	border-radius: 8px;
+	border-left: none;
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+.timeline > div{
+	position: absolute;
+}
+.timeline-item-1{
+	left: -15px;
+	top:-155px;
+}
+.timeline-item-2{
+	left: 45%;
+	top:-155px;
+}
+.timeline-item-3{
+	right: -100px;
+	top:-155px;
+}
+.timeline-item-4{
+	
+	left: 65%;
+	bottom:-90px;
+}
+.timeline-item-5{
+	left: 20%;
+	bottom:-90px;
+}
+.timeline strong{
+	color:#0099E6;
+	font-size: 20px;
+}
+.timeline img:hover{
+	transition: all .3s;
+}
+.timeline img:hover{
+	transform: scale(1.1);
+}
+.timeline p{
+	margin-bottom: 5px;
+	color:#ffffff;
+	opacity: 0.5;
+	height: 60px;
+}
+.timeline .timeline-item-5 p{
+	height: 0;
+}
+.timeline span{
+	width: 120px;
+	padding-top: 10px;
+	display: block;
+	color:#ffffff;
+	opacity: 0.6;
+	text-align: center;
 }
 
 /*======================================== Footer =============================*/
@@ -560,11 +623,14 @@ a + a{
 #footer .social-media .icon-github{
 	background-image: url('../images/github.png');
 }
+#footer .social-media .icon-discord{
+	background-image: url('../images/discord.png');
+}
 #footer .social-media .icon{
 	background-size: 18px auto;
 	background-repeat: no-repeat;
 	background-position: left center;
-	padding-left: 30px;
+	padding-left: 25px;
 }
 
 .back-top a{
@@ -792,44 +858,52 @@ h2{
 	margin:0 0 40px;
 }
 
-.roadmap-outer .roadmap{
-	margin-top: 0;
-	overflow: hidden;
-}
-.roadmap-outer .roadmap:before,
-.roadmap-outer .roadmap:nth-child(2n):before{
-	box-shadow: none;
-}
-.roadmap-outer .roadmap-icon,
-.roadmap-outer .roadmap:nth-child(2n) .roadmap-icon{
-	margin-top: -30px;
-	margin-bottom: 20px;
+.timeline{
+
 	position: relative;
-	transform: rotate(135deg);
-}
-.roadmap-outer .year,
-.roadmap-outer .roadmap:nth-child(2n) .year{ 
-	transform: rotate(-135deg); 
-}
-.roadmap-outer .roadmap-content,
-.roadmap-outer .roadmap:nth-child(2n) .roadmap-content{
-	width: 100%;
-	float: none;
-	border-radius: 0 0 20px 20px;
-	text-align: center;
-	padding: 25px 20px;
+	height: auto;
+	width: 96%;
 	margin: 0 auto;
+	border: none;
+	margin-top: 0;
+	margin-bottom: 0;
+
 }
-.roadmap-outer .roadmap-content:before,
-.roadmap-outer .roadmap:nth-child(2n) .roadmap-content:before{
-	width: 15px;
-	height: 25px;
+.timeline > div{
+	position: relative;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin-bottom: 10px;
+	height: 130px;
+}
+.timeline strong{
+	padding-left: 90px;
+	display: block;
+	
+}
+.timeline p{
+	margin-left: 90px;
+	height: auto;
+}
+.timeline img{
+	width: 80px;
+	height: 80px;
 	position: absolute;
-	top: -22px;
-	left: 50%;
-	z-index: -1;
-	transform: translate(-50%,0);
+	top: -10px;
+	left: 0;
 }
+.timeline .timeline-item-5 p{
+	height: 0;
+}
+.timeline span{
+	width: 100%;
+	padding-top: 0;
+	text-indent: 90px;
+	text-align: left;
+}
+
 .img-block {
     margin: 0 0 40px;
 }
