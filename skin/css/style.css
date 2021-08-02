@@ -172,7 +172,8 @@ p {
 
 /*======================================== General Design ========================================*/
 .inverse-bg{
-	background:#101421;
+	background:#101421 url('../images/bg-desc.webp') no-repeat left top;
+	background-size: 1000px 500px;
 }
 .section-title {
     width: 100%;
