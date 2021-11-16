@@ -54,7 +54,7 @@ export const Home = () => {
           </div>
           <div className="row">
             <a href="https://github.com/Deland-Labs/dfinity-fungible-token-standard" className="link-button"><span className="icon icon-1"></span>Source Code</a>
-            <a href="#" onClick={()=>{notify()}} className="link-button"><span className="icon icon-2"></span>Issuance Tool</a>
+            <a href="###" onClick={()=>{notify()}} className="link-button"><span className="icon icon-2"></span>Issuance Tool</a>
             <a href="https://dft.delandlabs.com/" className="link-button"><span className="icon icon-3"></span>Document</a>
             
           </div>

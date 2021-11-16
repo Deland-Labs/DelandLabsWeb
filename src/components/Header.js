@@ -15,7 +15,7 @@ export const Header = () => {
         <div className="row">
           <div className="col-6 col-md-10">
             <div className="top-left-row">
-              <div className="logo">DelandLabs</div>
+              <a href="/#Home" className="logo">DelandLabs</a>
               <div className={`nav-list ${menuVisible ? "show" : "close"}`}>
                 <ul>
                   {
