@@ -2,20 +2,25 @@ import React,{useState} from 'react'
 export const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false)
   const [currentIndex, setCurrentIndex] = useState(0)
-
   const houdleNav = (index) => {
-    if(index!==undefined) setCurrentIndex(index)
+    if(index==='logo'){
+      setCurrentIndex(0)
+      setMenuVisible(false)
+      return false
+    }
+    if(index!==undefined){
+      setCurrentIndex(index)
+    } 
     setMenuVisible(!menuVisible)
-    
   }
-  const navitem = ['Home', 'DFT Standard', 'OrderSwap', 'NFT Gaga']
+  const navitem = ['Home', 'DFT Standard', 'OrderSwap', 'NFT GaGa']
   return (
     <header className="app-header">
       <div className="container">
         <div className="row">
           <div className="col-6 col-md-10">
             <div className="top-left-row">
-              <a href="/#Home" className="logo">DelandLabs</a>
+              <a href="/#Home" className="logo" onClick={() => { houdleNav('logo') }}>DelandLabs</a>
               <div className={`nav-list ${menuVisible ? "show" : "close"}`}>
                 <ul>
                   {

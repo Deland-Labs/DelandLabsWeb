@@ -18,8 +18,8 @@ export const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 panel-text">
-              <h1>Deland Labs Make DEFI easyer</h1>
-              <p>You can Make DEFI easyer and Bring many active users for your project</p>
+              <h1>Deland Labs Make DEFI easier</h1>
+              {/* <p>You can Make DEFI easyer and Bring many active users for your project</p> */}
               <div className="panel-button-wrap">
                 {/* <a href="/#" className="panel-button">learn more</a> */}
               </div>
@@ -88,7 +88,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <div className="panel panel-4" id="NFT Gaga">
+      <div className="panel panel-4" id="NFT GaGa">
         <div className="container">
           <div className="row">
             <div className="col-md-12 panel-text text-center">

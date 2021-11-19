@@ -574,7 +574,11 @@
     }
     h1{margin-top: 0;}
     .panel-text{
-      padding-top: 120px;
+      padding-top: 180px;
+      // height: 100%;
+      // display: inline-flex;
+      // align-items: center;
+      // h1{margin-top: -50%;}
     }
     .panel-img{
       height: 100%;

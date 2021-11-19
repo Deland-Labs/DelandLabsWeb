@@ -14,7 +14,7 @@ export const Footer = () => {
               <a href="https://github.com/Deland-Labs" className="icon icon-github">Github</a>
               <a href="https://discord.gg/CdzzUaFUXq" className="icon icon-discord">Discord</a>
               <span className="divider"></span>
-              <Link to="/presskit#press" className="icon icon-press" title="press kit">press kit</Link>
+              <Link to="/presskit" className="icon icon-press" title="press kit">press kit</Link>
             </div>
           </div>
         </div>
