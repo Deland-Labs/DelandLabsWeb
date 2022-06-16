@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 copyright">
-              Copyright &copy; 2021 Deland-Labs All rights reserved.
+              Copyright &copy; 2022 Deland-Labs All rights reserved.
             </div>
             <div className="col-md-6 social-media">
               <a href="https://twitter.com/DelandLabs" className="icon icon-twitter">Twitter</a>
