@@ -3,14 +3,14 @@ import "../assets/styles/press.scss";
 import delandlabs3_512 from "../assets/images/press/delandlabs3_512.png";
 import delandlabs3_b from "../assets/images/press/delandlabs3_b.png";
 import delandlabs3_b_h from "../assets/images/press/delandlabs3_b_h.png";
-import orderswap2_512 from "../assets/images/press/orderswap2_512.png";
-import orderswap2_B from "../assets/images/press/orderswap2_B.png";
-import orderswap2_B_h from "../assets/images/press/orderswap2_B_h.png";
+import EX3_512 from "../assets/images/press/EX3_logo.svg";
+import EX3_B from "../assets/images/press/EX3_B.svg";
+import EX3_B_h from "../assets/images/press/EX3_B_H.svg";
 import NFTGAGA_512 from "../assets/images/press/NFTGAGA_512.png";
 import NFTGAGA_B_S from "../assets/images/press/NFTGAGA_B_S.png";
 import NFTGAGA_B_H from "../assets/images/press/NFTGAGA_B_H.png";
 import delandlabs from "../assets/images/press/pack/delandlabs.zip";
-import orderSwap from "../assets/images/press/pack/orderswap.zip";
+import ex3 from "../assets/images/press/pack/ex3.zip";
 import nftgaga from "../assets/images/press/pack/nftgaga.zip";
 import { Header } from "../components/Header";
 import { Link } from 'react-router-dom'
@@ -60,30 +60,30 @@ export const Press = () => {
         <div className="line-light"></div>
 
         <div className="press-content">
-          <h1>OrderSwap</h1>
-          <h2>The OrderSwap Logo</h2>
+          <h1>EX3 Orderswap</h1>
+          <h2>The EX3 Orderswap Logo</h2>
           <div className="row">
             <div className="col-md-4">
-              <a className="img-logo img-fluid" href={orderSwap}>
-                <div className="img-w"><img className="img-fluid" alt="OrderSwap Logo" src={orderswap2_512} /></div>
+              <a className="img-logo img-fluid" href={ex3}>
+                <div className="img-w"><img className="img-fluid" alt="EX3 Logo" src={EX3_512} /></div>
                 <div>
-                  <strong>OrderSwap Logo</strong> <i className="icon icon-download"></i>
+                  <strong>EX3 Orderswap Logo</strong> <i className="icon icon-download"></i>
                 </div>
               </a>
             </div>
             <div className="col-md-4">
-              <a className="img-logo img-fluid" href={orderSwap}>
-                <div className="img-w"><img className="img-fluid" alt="OrderSwap Logo" src={orderswap2_B} /></div>
+              <a className="img-logo img-fluid" href={ex3}>
+                <div className="img-w"><img className="img-fluid" alt="EX3 Logo" src={EX3_B} /></div>
                 <div>
-                  <strong>OrderSwap Logo</strong> <i className="icon icon-download"></i>
+                  <strong>EX3 Orderswap Logo</strong> <i className="icon icon-download"></i>
                 </div>
               </a>
             </div>
             <div className="col-md-4">
-              <a className="img-logo img-fluid" href={orderSwap}>
-                <div className="img-w"><img className="img-fluid" alt="OrderSwap Logo" src={orderswap2_B_h} /></div>
+              <a className="img-logo img-fluid" href={ex3}>
+                <div className="img-w"><img className="img-fluid" alt="EX3 Logo" src={EX3_B_h} /></div>
                 <div>
-                  <strong>OrderSwap Logo</strong> <i className="icon icon-download"></i>
+                  <strong>EX3 Orderswap Logo</strong> <i className="icon icon-download"></i>
                 </div>
               </a>
             </div>

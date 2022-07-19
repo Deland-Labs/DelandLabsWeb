@@ -66,7 +66,7 @@ export const Home = () => {
         <div className="container">
           <div className="container-inner">
             <div className="panel-text text-center">
-              <h1>OrderSwap</h1>
+              <h1>EX3 Orderswap</h1>
               <p>Open Order Procotol with AMM inside</p>
             </div>
             <div className="row panel-img">
