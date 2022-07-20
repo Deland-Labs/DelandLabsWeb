@@ -23,6 +23,7 @@
 .App{height: 100%;}
 .app-header {
   background-color: rgba($color: #fff, $alpha: 1);
+  backdrop-filter: blur(8px);
   height: 64px;
   width: 100%;
   display: flex;
@@ -335,6 +336,16 @@
 .panel-3{
   background: white url('../images/h5-bg-p3.png') no-repeat right bottom; background-size: auto 80%;
   .container{height: 100%;}
+  .orderswap-title{
+    img{
+      width: 149px;
+      height: 50px;
+      @media (min-width:768px) {
+        width: 297px;
+        height: 102px;
+      }
+    }
+  }
   .container-inner{
     height: 86%;
     display: flex;
@@ -640,7 +651,7 @@
   }
   .panel-3{
     background: $color-white url('../images/bg-p3.png') no-repeat center bottom; background-size: auto 98%;
-    padding-top: 190px;
+    padding-top: 150px;
     .container-inner{
       height: 505px;
       justify-content:space-between;
@@ -675,8 +686,4 @@
       
     }
   }
-  
 }
-
-
-

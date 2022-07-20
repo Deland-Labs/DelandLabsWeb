@@ -3,9 +3,9 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ex3logo from '../assets/images/press/EX3_B_H.svg';
 export const Home = () => {
   const notify = () =>{
-
     toast("coming soon",{
       position: "top-center",
       autoClose: 2000,
@@ -66,7 +66,7 @@ export const Home = () => {
         <div className="container">
           <div className="container-inner">
             <div className="panel-text text-center">
-              <h1>EX3 Orderswap</h1>
+              <h1 className="orderswap-title"><img src={ex3logo} alt="ex3 orderswap"/></h1>
               <p>Open Order Procotol with AMM inside</p>
             </div>
             <div className="row panel-img">
