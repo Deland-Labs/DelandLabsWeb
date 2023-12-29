@@ -1,0 +1,31 @@
+name: deploy tagged website
+on:
+  push:
+    branches:
+      - 'v*'
+      - 'release'
+    tags:
+      - 'v*'
+jobs:
+  deploy_1:
+    runs-on: ubuntu-latest
+    environment:
+      name: producation
+      url: https://delandlabs.com
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+      - name: build
+        run: |
+          export RELEASE_VERSION=${{ github.ref }}
+          ./scripts/build_prod_1.sh
+      - uses: amondnet/vercel-action@v25 #deploy
+        with:
+          scope: ${{ secrets.TEAM_ID_1 }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN_1 }} # Required
+          vercel-args: '--prod'
+          vercel-org-id: ${{ secrets.ORG_ID_1}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID_1}} #Required

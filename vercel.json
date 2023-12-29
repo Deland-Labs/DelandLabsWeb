@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "public": false,
+  "github": {
+    "enabled": false
+  },
+  "outputDirectory": "build",
+  "installCommand": "echo",
+  "buildCommand": "echo",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
