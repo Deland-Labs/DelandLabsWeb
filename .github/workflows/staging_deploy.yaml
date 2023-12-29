@@ -1,0 +1,30 @@
+name: deploy staging website
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: staging
+      url: https://staging.delandlabs.com
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'yarn'
+      - name: build
+        run: |
+          export RELEASE_VERSION=${{ github.ref }}
+          ./scripts/build_staging_1.sh
+      - uses: amondnet/vercel-action@v25 #deploy
+        with:
+          scope: ${{ secrets.TEAM_ID_1 }}
+          # github-token: ${{ secrets.GITHUB_TOKEN }}
+          vercel-token: ${{ secrets.VERCEL_TOKEN_1 }} # Required
+          # vercel-args: '--prebuilt'
+          vercel-org-id: ${{ secrets.ORG_ID_1}} #Required
+          vercel-project-id: ${{ secrets.PROJECT_ID_1}} #Required
